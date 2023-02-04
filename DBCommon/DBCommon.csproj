@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Fody" Version="6.6.4">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+      <PackageReference Include="sqlite-net-pcl" Version="1.9.141-beta" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Maui.Controls">
+        <HintPath>..\..\..\..\..\usr\local\share\dotnet\packs\Microsoft.Maui.Controls.Ref.any\7.0.52\ref\net7.0\Microsoft.Maui.Controls.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
